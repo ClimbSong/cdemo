@@ -3,19 +3,20 @@
 int main(void)
 {
 	//count of the number
-	const int NUM_COUNT=3;
-	int a[NUM_COUNT];
+	int num;
 	int i,j,t; 
 	
-	printf("input %d numbers :\n",NUM_COUNT);
-	for (i=0;i<NUM_COUNT;i++)
+	printf("input the numbers :\n");
+	scanf("%d\n",&num);
+	int a[num];
+	for (i=0;i<num;i++)
 	{
 		scanf("%d",&a[i]);
 	}
 	printf("\n");
-	for(j=0;j<NUM_COUNT-1;j++)
+	for(j=0;j<um-1;j++)
 	{
-		for(i=0;i<NUM_COUNT-j-1;i++)
+		for(i=0;i<num-j-1;i++)
 		{
 			if (a[i]>a[i+1])//compare the first and second
 			{
@@ -26,7 +27,7 @@ int main(void)
 		}
 	}
 	printf("the sorted numbers :\n");
-	for(i=0;i<NUM_COUNT;i++)
+	for(i=0;i<num;i++)
 	{
 		printf("%d ",a[i]);
 	}
