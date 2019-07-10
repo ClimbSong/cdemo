@@ -6,15 +6,16 @@ int main(void)
 	int num;
 	int i,j,t; 
 	
-	printf("input the numbers :\n");
-	scanf("%d\n",&num);
+	printf("please input the number counts :\n");
+	scanf("%d",&num);
 	int a[num];
+	printf("ok,please input the numbers:\n");
 	for (i=0;i<num;i++)
 	{
 		scanf("%d",&a[i]);
 	}
-	printf("\n");
-	for(j=0;j<um-1;j++)
+
+	for(j=0;j<num-1;j++)
 	{
 		for(i=0;i<num-j-1;i++)
 		{
